@@ -6,19 +6,20 @@
 <style>   
 Body {  
   font-family: Calibri, Helvetica, sans-serif;  
-  background-color: pink;  
+   background:url(https://wallpaperforu.com/wp-content/uploads/2020/09/bike-wallpaper-200917134627231920x1200.jpg);  
 }  
 button {   
-       background-color: #4CAF50;   
+       background-color: teal;   
        width: 100%;  
-        color: orange;   
+        color:Cornsilk;   
         padding: 15px;   
         margin: 10px 0px;   
         border: none;   
-        cursor: pointer;   
+        cursor: pointer;
+        font-size:20px;  
          }   
  form {   
-        border: 3px solid #f1f1f1;   
+        border: 3px royalblue;   
     }   
  input[type=text], input[type=password] {   
         width: 100%;   
@@ -40,22 +41,23 @@ button {
      
  .container {   
         padding: 25px;   
-        background-color: lightblue;  
+        background-color: skyblue;  
     }   
 </style>   
 </head>    
 <body>    
-    <center> <h1>    Customer Login Form </h1> </center>   
+    <center style="color:white;"> <h1>Customer Login Form </h1> </center>   
     <form>  
         <div class="container">   
             <label>Username : </label>   
             <input type="text" id="Uname" placeholder="Enter Username" name="" required>  
             <label>Password : </label>   
             <input type="password" id="Pass" placeholder="Enter Password" name="" required>  
-          <!-- <input type="submit" name="" value="login" onclick="validate()"> --> 
-             <button onclick="validate()">login</button>  
-            <input type="checkbox" checked="checked"> Remember me   
-            <button type="button" onclick="cancel()" class="cancelbtn""></a > Cancel</button>  
+             <button type="button" onclick="validate()">Login</button>  
+            <input type="checkbox" checked="checked"> Remember me
+            <a href="./DTVS_ERRORS.html">   
+            <button type="button" class="cancelbtn"">Cancel</button>
+            </a>  
             Forgot <a href="#"> password? </a>   
         </div>   
     </form> 
@@ -67,16 +69,16 @@ function validate()
  
   if(username=="DTVS" && password=="errors")
   {
-    alert("login sucessfully");
     
+    alert("login sucessfully");
+    location.assign('./DTVS_ERRORS.html');
   }
   else
   {
     alert("Password or username is incorrect");
   }
 
-}function cancel()
-{location.assign("file:///C:\Users\vaish\OneDrive\Documents\hacksprint\Hacksprint_-PS14-_-DTVS-ERRORS-");}
+}
   
  </script>         
 </body>     
